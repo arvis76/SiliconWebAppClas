@@ -1,0 +1,41 @@
+.features {
+    align-items: center;
+    text-align: center;
+    width: 1fr;
+
+    .container {
+        .content {
+           
+            .boxes {
+                h1{
+                   
+                }
+                background-color: #F3F6FF;
+                height: 100%;
+
+                .box {
+                    display: inline-block;
+                    margin-right: 0px;
+                    width: 25%;
+                    margin-top: 50px;
+                    margin-bottom: 100px;
+                    align-content: center;
+                    border: solid 0.5px #E2E5F1;
+
+                    a {
+                        color: black;
+                    }
+
+                    img {
+                        margin-bottom: 30px;
+                    }
+
+                    a:hover {
+                        color: #4C82F7;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

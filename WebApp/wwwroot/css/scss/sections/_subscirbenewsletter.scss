@@ -1,0 +1,50 @@
+#subscribe {
+    background-color: $gray-100;
+    padding: 4rem 0;
+
+    .container {
+
+
+        .title {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        form {
+            .alternative {
+                margin: 2rem 0;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+
+                .options {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            .form-email {
+                display: grid;
+                align-items: start;
+                grid-template-columns: 1fr auto;
+                gap: 1.5rem;
+
+                .input-group {
+                    position: relative;
+                    i {
+                        position: absolute;
+                        left: 10px;
+                        top: 15px;
+                        opacity: 50%;
+                    }
+
+                    
+                }
+
+                .btn {
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

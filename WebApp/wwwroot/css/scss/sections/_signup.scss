@@ -1,0 +1,38 @@
+.signup {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: blue;
+    }
+
+    .container {
+        width: 40%;
+
+        form {
+            .form-content {
+                margin-top: 30px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr ;
+               
+            }
+
+            input-group {
+                label {
+                    padding: 10px;
+                }
+            }
+
+            .checkbox-group {
+                margin-top: 10px;
+                margin-bottom: 30px
+            }
+
+          
+        }
+    }
+}

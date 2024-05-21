@@ -1,0 +1,29 @@
+.account-details {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        aside {
+
+           width:25%;
+           margin-left:100px;
+            img {
+                margin-top:100px;
+                height: 200px;
+                justify-content:center;
+            }
+
+        }
+
+        .content {
+
+
+            form {
+                .form-basic {
+                    .form-content {
+                    }
+                }
+            }
+        }
+    }
+}

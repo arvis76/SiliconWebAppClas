@@ -1,0 +1,21 @@
+.mobile-main {
+    .container {
+        .mobilemain {
+            display: flex;
+            justify-content: space-around;
+            background-color: $gray-100;
+
+            .mobileone {
+                margin-top: 100px;
+                display: grid;
+                margin-right:100px;
+
+                .appst {
+                    position: relative;
+                    left:100%;
+                    top: -35%;
+                }
+            }
+        }
+    }
+    }

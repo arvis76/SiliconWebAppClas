@@ -1,0 +1,63 @@
+form {
+    width: 100%;
+    display: grid;
+
+
+    .input-group {
+        display: grid;
+    }
+
+    .checkbox-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+
+        input[type="checkbox"] {
+            height: 1.2rem;
+            width: 1.2rem;
+            border: 0.063rem solid red;
+        }
+
+        label {
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+
+    label {
+        margin-bottom: 0.188rem;
+        font-weight: 700;
+    }
+
+    input {
+        padding: 1rem;
+        border-radius: 0.5rem !important;
+        border: 0.063rem solid #D4D7E5;
+
+        &::placeholder {
+            opacity: 0.4;
+        }
+
+        &.input-validation-error {
+            border: 0.063rem solid #EF4444 !important;
+            color: #EF4444;
+
+            &::placeholder {
+                color: #EF4444;
+            }
+        }
+    }
+
+    span {
+
+        &.field-validation-error {
+           font-size: 14px !important;
+            line-height: 160%;
+            font-weight: 400;
+            color: #565973;
+            font-family: font-manrope;
+            color: #EF4444;
+        }
+    }
+}

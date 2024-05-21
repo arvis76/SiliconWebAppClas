@@ -1,0 +1,36 @@
+.darkvslight {
+    .container {
+
+        .darkandlight {
+            height: 900px;
+            display: flex;
+
+
+            .dark {
+                background-color: #000000;
+                width: 50%;
+
+                img {
+                    margin-left: 19%;
+                    margin-top: 15%;
+                }
+
+                h1 {
+                    position: relative;
+                    top: 5%;
+                    margin-right: 10px;
+                    color: #FFFFFF;
+                    text-align: right;
+                }
+            }
+
+            .light {
+                position: relative;
+                top: 5%;
+                margin-left:10px;
+               
+                text-align: right;
+            }
+        }
+    }
+}

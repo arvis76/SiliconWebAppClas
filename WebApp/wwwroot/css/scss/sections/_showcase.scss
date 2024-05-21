@@ -1,0 +1,33 @@
+.showcase {
+    .container {
+        display: flex;
+        margin-top:100px;
+        .content {
+            margin-left: 100px;
+
+            .brands {
+
+                img {
+                    width: 20%;
+                }
+            }
+
+            .showone {
+
+
+                a {
+                    margin-top:50px;
+                    width: 30%;
+                }
+            }
+        }
+
+        .showcaseimage {
+            margin-left: 100px;
+
+            img {
+                width: 95%;
+            }
+        }
+    }
+}

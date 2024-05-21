@@ -1,0 +1,29 @@
+
+    .managework {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        img{
+            margin-left:50px;
+        }
+
+    }
+
+    .work {
+        display: block;
+        text-align: left;
+        margin-top: 100px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        img {
+            position: absolute;
+            right: 25%;
+            
+        }
+        a{
+            width:50%;
+        }
+    }

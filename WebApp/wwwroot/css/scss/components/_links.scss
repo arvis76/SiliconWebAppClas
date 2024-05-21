@@ -1,0 +1,29 @@
+a {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: font-manrope;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu-link {
+    line-height: 160%;
+    font-weight: 400;
+    color: #565973;
+    font-family: font-manrope;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus,
+    .active {
+        color: #6366F1;
+        text-decoration: none;
+    }
+}

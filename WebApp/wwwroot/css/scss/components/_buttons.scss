@@ -1,0 +1,156 @@
+@mixin button {
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.btn-reload {
+    background-color: #FFFFFF;
+    width: 20px;
+    position: relative;
+    bottom: 40px;
+    left: 122px;
+
+    .btn-theme-white {
+
+        @include button;
+        background: #FFFFFF;
+        color: #6366F1;
+        border: none;
+        
+        &:hover {
+            text-decoration: none;
+            background: #565973;
+            color: #FFFFFF;
+        }
+    }
+}
+.btn-theme {
+    @include button;
+    background: #6366F1;
+    color: #FFFFFF;
+    border: none;
+
+    &:hover {
+        text-decoration: none;
+        background: #565973;
+        color: #FFFFFF;
+    }
+}
+
+.btn-theme-s {
+    @include button;
+    box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+    background: #6366F1;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 13px;
+
+    &:hover {
+        box-shadow: 0px 8px 18px -8px rgba(19, 16, 34, 0.15);
+        text-decoration: none;
+        background: #565973;
+        color: #FFFFFF;
+    }
+}
+
+.btn-gray {
+    @include button;
+    background: #EFF2FC;
+    color: #33354D;
+    border: none;
+
+    &:hover {
+        text-decoration: none;
+        background: #565973;
+        color: #FFFFFF;
+    }
+}
+
+.btn-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    label {
+       
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 46px;
+        height: 25px;
+
+        & input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &:checked + .slider {
+                background-color: #6366F1;
+            }
+
+            &:focus + .slider {
+                box-shadow: 0 0 1px #6366F1;
+            }
+
+            &:checked + .slider:before {
+                transform: translateX(20px);
+                background-color: #FFFFFF;
+            }
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #565973;
+            transition: .4s;
+
+            &:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 3px;
+                bottom: 2.7px;
+                background-color: #FFFFFF;
+                transition: .4s;
+            }
+
+            &.round {
+                border-radius: 34px;
+            }
+
+            &.round:before {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.btn-social {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    background-color: #EFF2FC;
+    color: #33354D;
+
+    &:hover {
+        text-decoration: none;
+        background: #565973;
+        color: #FFFFFF;
+    }
+}
