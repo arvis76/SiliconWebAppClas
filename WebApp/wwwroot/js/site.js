@@ -1,10 +1,24 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
 
-    handleProfileImageUpl()
-
+    handleProfileImgUp()
 
 })
 
-function handleProfileImageUpl() {
 
+function handleProfileImgUp() {
+
+    try {
+        let ProfileImg = document.getElementById('ProfileImg')
+
+        if (ProfileImg != undefined) {
+
+            ProfileImg.addEventListener('change', function () {
+
+                if (this.file.lenght > 0)
+                    this.form.submit
+            })
+        }
+    }
+
+    catch { }
 }
