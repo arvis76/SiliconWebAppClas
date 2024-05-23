@@ -1,23 +1,10 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
-    handleProfileImageUpload()
+
+    handleProfileImageUpl()
+
+
 })
 
-
-function handleProfileImageUpload() {
-
-    try { 
-        let fileUploader = document.querySelector('#fileUploader')
-        if (fileUploader != undefined) {
-
-            fileUploader.addEventListener('change', function () {
-                if (this.files.lenght > 0) {
-                    this.form.submit()
-                }
-            })
-        }
-
-    }
-    catch { }
+function handleProfileImageUpl() {
 
 }
-
