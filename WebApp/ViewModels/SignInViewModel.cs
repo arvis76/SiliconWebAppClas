@@ -2,8 +2,13 @@
 
 namespace WebApp.ViewModels;
 
+
+
+
 public class SignInViewModel
 {
+   
+
     [Required]
     [Display(Name = "E-mail adress", Prompt = "Enter your e-mail adress")]
     [DataType(DataType.EmailAddress)]
