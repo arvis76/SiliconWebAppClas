@@ -8,11 +8,13 @@ public class SignUpModel
     [Required]
     [DataType(DataType.Text)]
     [Display(Name = "First name", Prompt = "Enter your first name")]
+    [MinLength(2, ErrorMessage = "Enter your first name")]
     public string FirstName { get; set; } = null!;
 
     [Required]
     [DataType(DataType.Text)]
     [Display(Name = "Last name", Prompt = "Enter your last name")]
+    [MinLength(2, ErrorMessage = "Enter your last name")]
     public string LastName { get; set; } = null!;
 
     [Required]

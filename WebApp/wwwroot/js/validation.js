@@ -18,19 +18,19 @@ const formErrorHandler = (element, validationResult) => {
 }
 
 
-const compareValidator = (element, compareValue) => {
-    if (element.value === compareValue)
-        return true
-
-    return false    
-}
 
 
-const textValidation = (element, minLenght = 2) => {
-    if (element.value.lenght >= minLenght)
+
+const textValidator = (element, minLength = 2) => {
+    
+    if (element.value.length >= minLength) {
         formErrorHandler(element, true)
-
-    formErrorHandler(element, false)
+    }
+    else {
+        formErrorHandler(element, false)
+    }   
+    
+    
 }
 
 const emailValidator = (element) => {
@@ -40,7 +40,14 @@ const emailValidator = (element) => {
 
 const passwordValidator = (element) => {
     if (element.dataset.valEqualtoOther != undefined) {
-        formErrorHandler(element, compareValidator(element.value, document.getElementsByName(element.dataset.valEqualtoOther.replace('*','Form')[0].value)))
+        let password = document.getElementsByName(element.dataset.valEqualtoOther.replace('*', 'Form'))[0].value
+
+        if (element.value === password) {
+            formErrorHandler(element, true)
+        }
+        else {
+            formErrorHandler(element, false)
+        }
     }
     else {
         const regEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!^%*?&]{8,15}$/
@@ -51,8 +58,10 @@ const passwordValidator = (element) => {
 const checkboxValidator = (element) => {
     if (element.checked)
         formErrorHandler(element, true)
-
-    formErrorHandler(element, false)
+    else {
+        formErrorHandler(element, false)
+    }
+    
 
 }
 
@@ -74,7 +83,7 @@ inputs.forEach(input => {
                 switch (e.target.type) {
 
                     case 'text':
-                        textValidation(e.target)
+                        textValidator(e.target)
                         break;
 
                     case 'email':
