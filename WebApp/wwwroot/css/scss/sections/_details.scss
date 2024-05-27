@@ -1,29 +1,50 @@
 .account-details {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 150px;
+    margin-bottom: 70px;
+
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
 
         aside {
+            border-right: 1px solid #E2E5F1;
+            padding-right: 20px;
 
-           width:25%;
-           margin-left:100px;
-            img {
-                margin-top:100px;
-                height: 200px;
-                justify-content:center;
+            .profile-info {
+                margin: 20px;
+                text-align: center;
+
+                h5 {
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+
+                img {
+                    margin-top: 100px;
+                    height: 200px;
+                    justify-content: center;
+                }
             }
 
-        }
-
-        .content {
-
-
-            form {
-                .form-basic {
-                    .form-content {
-                    }
-                }
+            nav {
+                margin-top: 50px;
+                text-align:left;
+                    
+                a {
+                    margin: 10px 0;
+                    text-align:left;
+                    justify-content:flex-start;
+                 }
+            }
+            .btn-theme-s {
+                text-align:left;
+                justify-content:flex-start;
             }
         }
     }
+
+
+
+   
 }
+
