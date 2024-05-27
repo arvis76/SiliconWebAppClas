@@ -50,7 +50,7 @@ form {
     }
 
     span {
-
+        position: relative;
         &.field-validation-error {
            font-size: 14px !important;
             line-height: 160%;
@@ -58,6 +58,15 @@ form {
             color: #565973;
             font-family: font-manrope;
             color: #EF4444;
+
+            &::after {
+                position:absolute;
+                right: 10px;
+                top:0px;
+                font-size: 2em;
+                display:block;
+                content: '\2BBF';
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebApp.Models;
 using WebApp.ViewModels;
 
 namespace WebApp.Controllers
@@ -23,22 +24,23 @@ namespace WebApp.Controllers
         [Route("/signup")]
         public async Task<IActionResult> SignUp(SignUpViewModel model)
         {
+           
             if (ModelState.IsValid)
             {
-                if (!await _context.Users.AnyAsync(x => x.Email == model.Email))
+                if (!await _context.Users.AnyAsync(x => x.Email == model.Form.Email))
                 {
                     var userEntity = new UserEntity
                     {
-                        Email = model.Email,
-                        UserName = model.Email,
-                        FirstName = model.FirstName,
-                        LastName = model.LastName,
+                        Email = model.Form.Email,
+                        UserName = model.Form.Email,
+                        FirstName = model.Form.FirstName,
+                        LastName = model.Form.LastName,
 
 
                     };
-                    if ((await _userManager.CreateAsync(userEntity, model.Password)).Succeeded)
+                    if ((await _userManager.CreateAsync(userEntity, model.Form.Password)).Succeeded)
                     {
-                        if ((await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false)).Succeeded)
+                        if ((await _signInManager.PasswordSignInAsync(model.Form.Email, model.Form.Password, false, false)).Succeeded)
                             return LocalRedirect("/");
                         else
                             return LocalRedirect("/signin");
@@ -70,7 +72,7 @@ namespace WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                if ((await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.IsPresistent, false)).Succeeded)
+                if ((await _signInManager.PasswordSignInAsync(model.Form.Email, model.Form.Password, model.Form.IsPresistent, false)).Succeeded)
                     return LocalRedirect(returnUrl);
 
             }
