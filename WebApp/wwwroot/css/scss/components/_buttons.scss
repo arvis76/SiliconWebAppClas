@@ -34,6 +34,23 @@
     background: #6366F1;
     color: #FFFFFF;
     border: none;
+    padding: 1rem;
+    
+
+    &:hover {
+        text-decoration: none;
+        background: #565973;
+        color: #FFFFFF;
+    }
+}
+.btn-login {
+    @include button;
+    background: #6366F1;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem;
+    width:100%;
+
 
     &:hover {
         text-decoration: none;

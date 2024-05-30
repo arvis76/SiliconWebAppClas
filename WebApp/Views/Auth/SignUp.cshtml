@@ -46,17 +46,18 @@
                             <input asp-for="Form.ConfirmPassword" />
                             <span asp-validation-for="Form.ConfirmPassword"></span>
                         </div>
-
-                <div id="form-terms" class="checkbox-group">
-                    <div class="input-group">
-                        <input asp-for="Form.TermsAndConditions" />
-                        <label asp-for="Form.TermsAndConditions"></label>
+                <div class="input-sign-form">
+                    <div id="form-terms" class="checkbox-group">
+                        <div class="input-group">
+                            <input asp-for="Form.TermsAndConditions" />
+                            <label asp-for="Form.TermsAndConditions"></label>
+                        </div>
+                        <span asp-validation-for="Form.TermsAndConditions"></span>
                     </div>
-                    <span asp-validation-for="Form.TermsAndConditions"></span>
                 </div>
-                <div class="sbm-button">
+                <div id="submit-signup" class="sbm-button">
 
-                    <button type="submit" class="btn btn-theme"><i class="fa-regular fa-arrow-left-to-bracket"></i>Sign up</button>
+                    <button type="submit" class="btn btn-login"><i class="fa-regular fa-arrow-left-to-bracket"></i>Sign up</button>
 
                 </div>
             </div>

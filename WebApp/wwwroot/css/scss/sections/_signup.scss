@@ -5,34 +5,51 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: blue;
-    }
-
     .container {
         width: 40%;
 
         form {
-            .form-content {
+            .content {
                 margin-top: 30px;
                 display: grid;
                 gap: 20px;
-                grid-template-columns: 1fr 1fr ;
-               
-            }
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "firstname lastname" "email email" "password password" "confirmpassword confirmpassword" "terms terms" "signup signup";
 
-            input-group {
-                label {
-                    padding: 10px;
+
+                #form-firstname {
+                    grid-area: firstname;
+                }
+
+                #form-lastname {
+                    grid-area: lastname;
+                }
+
+                #form-email {
+                    grid-area: email;
+                }
+
+                #form-password {
+                    grid-area: password;
+                }
+
+                #form-confirmpassword {
+                    grid-area: confirmpassword;
+                }
+
+                #form-terms {
+                    grid-area: terms;
+                }
+
+                #submit-signup {
+                    grid-area: signup;
+                }
+
+                .input-sign-form {
+                    display: flex;
+                  
                 }
             }
-
-            .checkbox-group {
-                margin-top: 10px;
-                margin-bottom: 30px
-            }
-
-          
         }
     }
 }

@@ -143,7 +143,7 @@ public class AccountController(UserManager<UserEntity> userManager, ApplicationC
         if (user != null && file != null && file.Length !=0)
         {
             var fileName = $"p_{user.Id}_{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/images/upload/profiles", fileName);
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/images/uploads/profiles", fileName);
 
             using var fs = new FileStream(filePath, FileMode.Create);
             await file.CopyToAsync(fs);

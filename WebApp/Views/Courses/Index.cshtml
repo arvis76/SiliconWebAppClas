@@ -15,7 +15,6 @@
                     <i class="fa-regular fa-search"></i>
                 </div>
             </form>
-
        </div>
 
         <div class="course-items">
@@ -28,8 +27,7 @@
                         {
                             <div class="bestseller">Best Seller</div>
                         }
-
-                        <button class="btn btn-circle bookmarks"><i class="fa-regular fa-bookmarks"></i></button>
+                        <button class="btn-bookmarks"><i class="fa-regular fa-bookmark"></i></button>
 
                         <img src="~/images/courses/@course.Image" alt="@course.Title" />
 
@@ -41,7 +39,7 @@
                                 {
                                     <div class="discount">@course.DiscountPrice</div>
                                 }
-                                <div class="price @(!string.IsNullOrEmpty(course.DiscountPrice)? "discount-enable" : "")"></div>
+                                <div class="price @(!string.IsNullOrEmpty(course.DiscountPrice)? "discount-enable" : "")">@course.Price</div>
                             </div>
                             <div class="footer">
                                 <div class="hours">
@@ -52,14 +50,9 @@
                                 </div>
                             </div>
                         </div>
-
                   </a>
                 }
             }
-
-
         </div>
-
-
     </div>
 </section>
