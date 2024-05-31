@@ -46,8 +46,9 @@
                 }
 
                 .input-sign-form {
-                    display: flex;
-                  
+                    .input-group {
+                        display: flex;
+                    }
                 }
             }
         }

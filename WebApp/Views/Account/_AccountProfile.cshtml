@@ -10,7 +10,7 @@
                 <img src="/images/uploads/profiles/@user.ProfileImg" alt="@user.FirstName @user.LastName" />
                 <form enctype="multipart/form-data" method="post" asp-action="UploadProfileImage" asp-controller="Account">
                     <input id="imageUploader" type="file" name="file" hidden />
-                    <label for="imageUploader" class="btn btn-circle btn-circle-sm"><i class="fa-solid fa-arrows-rotate"></i> </label>
+                    <label for="imageUploader" class="btn-circle-sm"><i class="fa-solid fa-arrows-rotate"></i> </label>
                 </form> 
            </div>
 
@@ -18,9 +18,9 @@
               <h3 class="displayname">@user.FirstName @user.LastName</h3>
               <p>@user.Email</p>
           </div>
-            <button class="btn-theme-s"><i class="fa-solid fa-gear"></i> Account details</button>
-
-            <button class="btn-login">Sign out<i class="fa-solid fa-arrow-left-to-bracket"></i></button>
+            
+            <a class="btn-theme" asp-controller="Account" asp-action="Details"><i class="fa-solid fa-gear"></i><span> Account details </span></a>
+            <a class="btn-gray" asp-controller="Auth" asp-action="SignOut"><i class="fa-solid fa-arrow-right-from-bracket"></i><span> Sign out </span></a>
            
 
        </div>

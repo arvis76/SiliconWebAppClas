@@ -15,12 +15,10 @@
     bottom: 40px;
     left: 122px;
 
-    .btn-theme-white {
-
-        @include button;
-        background: #FFFFFF;
+    .btn-white {
+        background: black;
         color: #6366F1;
-        border: none;
+        border: solid black;
         
         &:hover {
             text-decoration: none;

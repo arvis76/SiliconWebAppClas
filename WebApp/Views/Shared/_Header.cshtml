@@ -31,6 +31,8 @@
         <div class="account-buttons">
             @if (SignInManager.IsSignedIn(User))
             {
+                <a class="btn-theme" asp-controller="Auth" asp-action="SignUp"><i class="fa-regular fa-user"></i><span> Sign up </span></a>
+                <a class="btn-theme" asp-controller="Auth" asp-action="SignOut"><i class="fa-regular fa-user"></i><span> Sign out </span></a>
                <div class="profile">
                     <div class="profile-image">
                         <a asp-action="Details" asp-controller="Account">

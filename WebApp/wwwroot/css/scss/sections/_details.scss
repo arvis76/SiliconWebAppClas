@@ -3,7 +3,7 @@
     grid-template-columns: 2fr 5fr;
     gap: 150px;
     margin-bottom: 70px;
-    
+
 
     .container {
         display: flex;
@@ -12,12 +12,12 @@
         aside {
             border-right: 1px solid #E2E5F1;
             padding-right: 50px;
-            margin-left:300px;
+            margin-left: 300px;
 
             .profile-info {
                 margin: 10px;
                 text-align: center;
-                width:200px;
+                width: 200px;
 
                 h5 {
                     margin-top: 15px;
@@ -28,7 +28,7 @@
                     margin-top: 100px;
                     height: 200px;
                     justify-content: center;
-                    border-radius:50%;
+                    border-radius: 50%;
                 }
             }
 
@@ -52,9 +52,55 @@
 
     .content {
         padding-left: 100px;
-        display:grid;
-        margin-top:100px;
-        width:500px;
+        display: grid;
+        margin-top: 100px;
+        width: 500px;
 
+        form {
+            .form-basic {
+                .form-content{
+                  margin-top: 30px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "firstname lastname" "email email" "password password" "confirmpassword confirmpassword" "terms terms" "signup signup";
+
+
+                #form-firstname {
+                    grid-area: firstname;
+                }
+
+                #form-lastname {
+                    grid-area: lastname;
+                }
+
+                #form-email {
+                    grid-area: email;
+                }
+
+                #form-password {
+                    grid-area: password;
+                }
+
+                #form-confirmpassword {
+                    grid-area: confirmpassword;
+                }
+
+                #form-terms {
+                    grid-area: terms;
+                }
+
+                #submit-signup {
+                    grid-area: signup;
+                }
+
+                .input-sign-form {
+                    .input-group {
+                        display: flex;
+                    }
+                }
+            }
+                }
+        }
     }
 }

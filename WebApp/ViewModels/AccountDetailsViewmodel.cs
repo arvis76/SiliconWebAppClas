@@ -17,7 +17,7 @@ public class AccountBasicInfo
     public string FirstName { get; set; } = null!;
 
     [Required]
-    [Display(Name = "First name", Prompt = "Enter your first name")]
+    [Display(Name = "Last name", Prompt = "Enter your first name")]
     public string LastName { get; set; } = null!;
 
     [Required]
@@ -38,11 +38,11 @@ public class AccountBasicInfo
 public class AccountAddressInfo
 {
     [Required]
-    [Display(Name = "AddressLine_1", Prompt = "Enter your first adress line")]
+    [Display(Name = "AddressLine 1", Prompt = "Enter your first adress line")]
     public string AddressLine_1 { get; set; } = null!;
 
 
-    [Display(Name = "Addressline_2(optional)", Prompt = "Enter your second adress line (optional)")]
+    [Display(Name = "Addressline 2(optional)", Prompt = "Enter your second adress line (optional)")]
     [DataType(DataType.Text)]
     public string? AddressLine_2 { get; set;}
 

@@ -1,12 +1,27 @@
 .account-profile {
     .profile {
-        .profile-image{
-            img{
-                margin-top:200px;
-                height:300px;
+        .profile-image {
+            position: relative;
 
+            form {
+                .btn-circle-sm {
+                    position: absolute;
+                    bottom: 8px;
+                    right: 50px;
+                    background-color: #FFFFFF;
+                    padding: 5px 10px;
+                    border-radius: 50%;
+                    border:solid 1px;
+                }
+            }
+
+            img {
+                justify-content: center;
+                margin-top: 200px;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
             }
         }
     }
 }
-

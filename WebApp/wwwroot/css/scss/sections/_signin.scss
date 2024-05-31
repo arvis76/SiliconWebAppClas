@@ -6,7 +6,6 @@
     align-items: center;
 
     a {
-        
     }
 
     .container {
@@ -28,7 +27,6 @@
             }
 
             .checkbox-group {
-                
                 margin-top: 10px;
                 margin-bottom: 10px
             }
@@ -47,6 +45,14 @@
 
             #btn-submit {
                 grid-area: submit;
+            }
+        }
+
+        .input-sign-form {
+            .input-group {
+                display: flex;
+                
+                
             }
         }
     }

@@ -4,7 +4,7 @@ form {
 
 
     .input-group {
-        display: grid;
+        display:grid;
     }
 
     .checkbox-group {
@@ -51,8 +51,9 @@ form {
 
     span {
         position: relative;
+
         &.field-validation-error {
-           font-size: 14px !important;
+            font-size: 14px !important;
             line-height: 160%;
             font-weight: 400;
             color: #565973;
@@ -60,11 +61,11 @@ form {
             color: #EF4444;
 
             &::after {
-                position:absolute;
+                position: absolute;
                 right: 10px;
-                bottom:30px;
+                bottom: 30px;
                 font-size: 2em;
-                display:block;
+                display: block;
                 content: '\2BBF';
             }
         }

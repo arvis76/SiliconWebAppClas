@@ -7,20 +7,12 @@
   bottom: 40px;
   left: 122px;
 }
-.btn-reload .btn-theme-white {
-  border-radius: 6px;
-  text-align: center;
-  font-size: 14px;
-  padding: 8px 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  background: #FFFFFF;
+.btn-reload .btn-white {
+  background: black;
   color: #6366F1;
-  border: none;
+  border: solid black;
 }
-.btn-reload .btn-theme-white:hover {
+.btn-reload .btn-white:hover {
   text-decoration: none;
   background: #565973;
   color: #FFFFFF;
@@ -455,6 +447,9 @@ header .container .btn-mobile {
 .signin .container form #btn-submit {
   grid-area: submit;
 }
+.signin .container .input-sign-form .input-group {
+  display: flex;
+}
 
 .signup {
   margin-top: 30px;
@@ -494,7 +489,7 @@ header .container .btn-mobile {
 .signup .container form .content #submit-signup {
   grid-area: signup;
 }
-.signup .container form .content .input-sign-form {
+.signup .container form .content .input-sign-form .input-group {
   display: flex;
 }
 
@@ -674,10 +669,56 @@ header .container .btn-mobile {
   margin-top: 100px;
   width: 500px;
 }
+.account-details .content form .form-basic .form-content {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "firstname lastname" "email email" "password password" "confirmpassword confirmpassword" "terms terms" "signup signup";
+}
+.account-details .content form .form-basic .form-content #form-firstname {
+  grid-area: firstname;
+}
+.account-details .content form .form-basic .form-content #form-lastname {
+  grid-area: lastname;
+}
+.account-details .content form .form-basic .form-content #form-email {
+  grid-area: email;
+}
+.account-details .content form .form-basic .form-content #form-password {
+  grid-area: password;
+}
+.account-details .content form .form-basic .form-content #form-confirmpassword {
+  grid-area: confirmpassword;
+}
+.account-details .content form .form-basic .form-content #form-terms {
+  grid-area: terms;
+}
+.account-details .content form .form-basic .form-content #submit-signup {
+  grid-area: signup;
+}
+.account-details .content form .form-basic .form-content .input-sign-form .input-group {
+  display: flex;
+}
 
+.account-profile .profile .profile-image {
+  position: relative;
+}
+.account-profile .profile .profile-image form .btn-circle-sm {
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: solid 1px;
+}
 .account-profile .profile .profile-image img {
+  justify-content: center;
   margin-top: 200px;
-  height: 300px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .courses {
