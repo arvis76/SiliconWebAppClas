@@ -606,7 +606,7 @@ header .container .btn-mobile {
   display: grid;
   align-items: start;
   grid-template-columns: 1fr auto;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 #subscribe .container form .form-email .input-group {
   position: relative;

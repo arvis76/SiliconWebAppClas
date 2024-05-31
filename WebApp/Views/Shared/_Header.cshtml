@@ -9,7 +9,7 @@
         <div id="menu">
             <nav>
                 <a class="menu-link" asp-controller="Default" asp-action="Home" asp-fragment="_Showcase">Overview</a>
-                <a class="menu-link" asp-controller="Home" asp-action="Index" asp-fragment="_Features">Features</a>
+                <a class="menu-link" asp-controller="Default" asp-action="Home" asp-fragment="_Features">Features</a>
                
                 @if (SignInManager.IsSignedIn(User))
                 {

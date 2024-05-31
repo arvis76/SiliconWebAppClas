@@ -3,7 +3,7 @@
     padding: 4rem 0;
 
     .container {
-
+       
 
         .title {
             display: flex;
@@ -13,6 +13,7 @@
 
         form {
             .alternative {
+                
                 margin: 2rem 0;
                 display: grid;
                 grid-template-columns: 1fr 3fr;
@@ -27,10 +28,11 @@
                 display: grid;
                 align-items: start;
                 grid-template-columns: 1fr auto;
-                gap: 1.5rem;
+                gap: 2rem;
 
                 .input-group {
                     position: relative;
+                   
                     i {
                         position: absolute;
                         left: 10px;

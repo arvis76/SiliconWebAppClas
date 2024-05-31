@@ -19,7 +19,7 @@ public class SignUpModel
 
     [Required]
     [DataType(DataType.EmailAddress)]
-    [Display(Name = "E-mail adress", Prompt = "Enter your e-mail adress")]
+    [Display(Name = "E-mail address", Prompt = "Enter your e-mail adress")]
     public string Email { get; set; } = null!;
 
     [Required]
