@@ -633,7 +633,7 @@ header .container .btn-mobile {
 .account-details .container aside {
   border-right: 1px solid #E2E5F1;
   padding-right: 50px;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 .account-details .container aside .profile-info {
   margin: 10px;
@@ -669,36 +669,58 @@ header .container .btn-mobile {
   margin-top: 100px;
   width: 500px;
 }
-.account-details .content form .form-basic .form-content {
-  margin-top: 30px;
+.account-details .content .form-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.account-details .content .form-basic {
+  border-bottom: 1px solid #E2E5F1;
+}
+.account-details .content .form-basic h5 {
+  color: #6366F1;
+}
+.account-details .content .form-basic .form-content {
+  margin-top: 40px;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "firstname lastname" "email email" "password password" "confirmpassword confirmpassword" "terms terms" "signup signup";
+  grid-template-areas: "firstname lastname" "email phone" "bio bio" "confirmpassword confirmpassword" "terms terms" "signup signup";
 }
-.account-details .content form .form-basic .form-content #form-firstname {
+.account-details .content .form-basic .form-content #form-firstname {
   grid-area: firstname;
 }
-.account-details .content form .form-basic .form-content #form-lastname {
+.account-details .content .form-basic .form-content #form-lastname {
   grid-area: lastname;
 }
-.account-details .content form .form-basic .form-content #form-email {
+.account-details .content .form-basic .form-content #form-email {
   grid-area: email;
 }
-.account-details .content form .form-basic .form-content #form-password {
-  grid-area: password;
+.account-details .content .form-basic .form-content #form-phone {
+  grid-area: phone;
 }
-.account-details .content form .form-basic .form-content #form-confirmpassword {
-  grid-area: confirmpassword;
+.account-details .content .form-basic .form-content #form-bio {
+  grid-area: bio;
+  height: 200px;
 }
-.account-details .content form .form-basic .form-content #form-terms {
+.account-details .content .form-basic .form-content #form-terms {
   grid-area: terms;
 }
-.account-details .content form .form-basic .form-content #submit-signup {
+.account-details .content .form-basic .form-content #submit-signup {
   grid-area: signup;
 }
-.account-details .content form .form-basic .form-content .input-sign-form .input-group {
+.account-details .content .form-basic .form-content .form-button {
   display: flex;
+  gap: 10px;
+}
+.account-details .content .form-address {
+  margin-top: 40px;
+}
+.account-details .content .form-address h5 {
+  color: #6366F1;
+}
+.account-details .content .form-address .form-content {
+  padding-bottom: 40px;
 }
 
 .account-profile .profile .profile-image {

@@ -12,7 +12,7 @@
         aside {
             border-right: 1px solid #E2E5F1;
             padding-right: 50px;
-            margin-left: 300px;
+            margin-left: 200px;
 
             .profile-info {
                 margin: 10px;
@@ -56,14 +56,24 @@
         margin-top: 100px;
         width: 500px;
 
-        form {
-            .form-basic {
-                .form-content{
-                  margin-top: 30px;
+        .form-button {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .form-basic {
+            h5 {
+                color: #6366F1;
+            }
+
+            .form-content {
+                margin-top: 40px;
                 display: grid;
                 gap: 20px;
                 grid-template-columns: 1fr 1fr;
-                grid-template-areas: "firstname lastname" "email email" "password password" "confirmpassword confirmpassword" "terms terms" "signup signup";
+                grid-template-areas: "firstname lastname" "email phone" "bio bio" "confirmpassword confirmpassword" "terms terms" "signup signup";
+
 
 
                 #form-firstname {
@@ -78,12 +88,13 @@
                     grid-area: email;
                 }
 
-                #form-password {
-                    grid-area: password;
+                #form-phone {
+                    grid-area: phone;
                 }
 
-                #form-confirmpassword {
-                    grid-area: confirmpassword;
+                #form-bio {
+                    grid-area: bio;
+                    height: 200px;
                 }
 
                 #form-terms {
@@ -94,13 +105,25 @@
                     grid-area: signup;
                 }
 
-                .input-sign-form {
-                    .input-group {
-                        display: flex;
-                    }
+                .form-button {
+                    display: flex;
+                    gap: 10px;
                 }
             }
-                }
+
+            border-bottom: 1px solid #E2E5F1;
+        }
+
+        .form-address {
+            margin-top: 40px;
+
+            h5 {
+                color: #6366F1;
+            }
+
+            .form-content {
+                padding-bottom: 40px;
+            }
         }
     }
 }
